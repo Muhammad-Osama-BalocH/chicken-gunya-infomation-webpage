@@ -1,11 +1,12 @@
 import Image from "next/image";
+import mosquitoImage from "../public/mosquito.jpg"; // Use import instead of require
 
 const Treatment = () => {
   const treatmentOptions = [
     "Pain relievers like acetaminophen or ibuprofen to reduce fever and joint pain.",
     "Staying well-hydrated to combat dehydration caused by fever",
     "Plenty of rest to allow the body to recover."
-  ]
+  ];
 
   return (
     <section className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md mt-6">
@@ -14,12 +15,12 @@ const Treatment = () => {
 
       {/* Descriptive Text */}
       <p className="text-lg text-gray-700 mb-6">
-        Currently there is no specific antiviral treatment for Chikungunya.The management of symptoms is essential to make the patient more comfortable. Below are some general treatment methods used to alleviate the effects of this disease:
+        Currently there is no specific antiviral treatment for Chikungunya. The management of symptoms is essential to make the patient more comfortable. Below are some general treatment methods used to alleviate the effects of this disease:
       </p>
 
       <div className="mb-6 flex justify-center">
         <Image
-          src={require("../public/mosquito.jpg")}
+          src={mosquitoImage} // Use the imported image
           alt="Treatment methods for Chikungunya"
           width={500}
           height={300}
